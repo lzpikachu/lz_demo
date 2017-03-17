@@ -1,0 +1,69 @@
+$toolbar-height: 64px - 1px;
+.menu {
+  &.under-mask {
+    z-index: 58;
+  }
+  .logo {
+    line-height: $toolbar-height;
+    margin-bottom: -8px;
+    text-align: center;
+  }
+
+  md-list-item.active{
+    background-color: rgba(0, 0, 0, .04);
+  }
+
+  .last-message {
+    font-size: 84%;
+    color: #a0a0a0;
+    margin: 0 1em;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .unreadCount {
+    display: block;
+    background: #F44336;
+    height: 20px;
+    line-height: 20px;
+    min-width: 20px;
+    text-align: center;
+    padding: 0 4px;
+    border-radius: 50%;
+    color: white;
+    font-size: 12px;
+  }
+
+  .user {
+    height: 58px;
+    min-height: 58px;
+  }
+
+  .empty-list-hint {
+    display: none;
+    text-align:  center;
+    color: #999;
+  }
+
+  .md-subheader + .empty-list-hint {
+    display: block;
+  }
+}
+
+.network-error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,.85);
+  z-index: 10000;
+  color: #666;
+  md-icon {
+    font-size: 64px;
+    width: 64px;
+    height: 64px;
+    margin: 0 0 20px;
+    color: #777;
+  }
+}
